@@ -1,8 +1,46 @@
-# React + Vite
+# Flight Notification System Frontend
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is the frontend application for the Flight Notification System. It is built using React, Vite, Tailwind CSS, and Material-UI.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Dashboard**: Displays the list of flights with their details.
+- **Register User**: Allows registration of new users.
+- **Register Booking**: Allows booking a flight for a registered user.
+- **Cancel Booking**: Allows cancellation of an existing booking.
+- **Cancel Notification**: Allows opting out of notifications for a flight.
+
+## Folder Structure
+
+```textplan
+flight-notification-frontend/
+├── src/
+│ ├── assets/
+│ ├── components/
+│ │ ├── Dashboard.jsx
+│ │ ├── RegisterUser.jsx
+│ │ ├── RegisterBooking.jsx
+│ │ ├── CancelBooking.jsx
+│ │ ├── CancelNotification.jsx
+│ │ └── Sidebar.jsx
+│ ├── pages/
+│ │ ├── Home.jsx
+│ │ ├── UserRegistration.jsx
+│ │ ├── BookingRegistration.jsx
+│ │ ├── BookingCancellation.jsx
+│ │ └── NotificationCancellation.jsx
+│ ├── services/
+│ │ ├── axiosInstance.js
+│ │ ├── userService.js
+│ │ ├── bookingService.js
+│ ├── App.jsx
+│ ├── main.jsx
+│ └── index.css
+├── .env
+├── .eslintrc.json
+├── index.html
+├── package.json
+├── postcss.config.js
+├── tailwind.config.js
+└── vite.config.js
+```
